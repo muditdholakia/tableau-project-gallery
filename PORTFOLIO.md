@@ -22,7 +22,9 @@ An original synthetic-sales dashboard blueprint and Tableau Embedding API v3 exa
 
 ## Authorship and sources
 
-Original source and documentation in this repository were created for Mudit Dholakia's
+Original Python/HTML source and documentation in this repository were created for Mudit Dholakia's
 portfolio with AI assistance. Platform references are attributed in README.md.
 Upstream forks elsewhere in the collection retain their original authorship and licenses.
+The packaged Andy Kriebel workbook retains its original authorship and author-specific
+reuse permission; it is not presented as Mudit's original work. See THIRD_PARTY_NOTICES.md.
 No production deployment or professional project history is claimed by these examples.

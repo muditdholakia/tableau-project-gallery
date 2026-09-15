@@ -1,10 +1,24 @@
 # tableau-project-gallery
 
-An original synthetic-sales dashboard blueprint and Tableau Embedding API v3 example.
+Synthetic-sales labs, an attributed Andy Kriebel Data School teaching workbook,
+Tableau Embedding API v3, and original Tableau Server/Cloud automation recipes.
+
+## Collection
+
+| Content | Start here |
+| --- | --- |
+| Packaged workbook: 130 worksheets and five dashboards | [Andy Kriebel workbook and permission notice](workbooks/andy-kriebel/README.md) |
+| The Data School UK readings | [Reading guide](resources/data-school-reading-guide.md) |
+| Original LOD, table calculation, and parameter exercises | [Advanced-calculation labs](labs/advanced-calculations.md) |
+| Inventory, project rules, publishing, and refresh scripts | [Server recipes](server/README.md) |
+| Effective permissions testing | [Permissions lab](server/permissions-lab.md) |
+| Refresh, performance, backup, and content lifecycle | [Operations runbook](server/operations-runbook.md) |
 
 ## Architecture
 
-Synthetic CSV → Tableau workbook → Tableau Public or development Cloud site → browser embedding. The local example contains no authentication secrets.
+Synthetic CSV → Tableau workbook → Tableau Public or development Cloud site → browser embedding.
+Server recipes: local environment PAT → official TSC REST client → paginated inventory,
+permission-rule export, CreateNew publishing, or extract refresh. Private outputs are ignored.
 
 ## Prerequisites
 
@@ -20,7 +34,11 @@ Python 3.12; Tableau Desktop/Public authoring; a published visualization; a mode
 
 ## Sample workflow
 
-CSV generation → calculated fields → KPI, trend, and region views → publish → embed. The workbook must be authored using the provided blueprint; no finished .twbx is included.
+CSV generation → calculated fields → KPI, trend, and region views → publish → embed.
+The original sales workbook must be authored using the blueprint. An unchanged,
+third-party `.twbx` teaching collection is included separately with explicit attribution.
+Install `requirements.txt` for the workbook inspection and Server scripts; follow
+[Server setup](server/README.md). Script commands preview by default.
 
 ## Security
 
@@ -34,7 +52,9 @@ Blank embed: check the published URL and access settings. Private view login: co
 ## License and attribution
 
 Original implementations and documentation by Mudit Dholakia, licensed under MIT.
-No upstream code was imported. These references informed the learning scope:
+The imported Andy Kriebel workbook uses author-specific reuse permission and is **not
+MIT-licensed**. See [third-party notices](THIRD_PARTY_NOTICES.md) and its adjacent permission
+notice. The Data School articles/assets are not copied. These references informed the learning scope:
 - https://github.com/tableau/embedding-api-v3-samples
 - https://github.com/tableau/hyper-api-samples
 Platform services, SDK distributions, and third-party content retain their own terms.
@@ -46,6 +66,8 @@ Review Dependabot changes and current platform documentation before upgrading.
 
 ## Validation limits
 
-Python syntax and local smoke tests are checked before publication. Cloud execution,
-tenant integrations, Tableau workbook authoring, and live agent evaluation require
-your development environments and have not been verified by local checks.
+Run `python -m unittest discover -s tests -v` after installing requirements. Checks cover
+safe ZIP/XML handling, credential attributes, preview behavior, HTTPS enforcement, and
+CSV formula escaping. GitHub Actions also inspects the included workbook. The source
+workbook was created in Tableau 2020.2 and has not been rendered in Tableau Desktop here.
+No live Server/Cloud connection, deployment, or refresh was performed.

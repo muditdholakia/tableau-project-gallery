@@ -1,0 +1,28 @@
+{
+  "sha256": "2313dce8d19df8902a12226d0f4824a174c1118c8c135bb5295bd9d942d26e4b",
+  "bytes": 5192906,
+  "tableau_source_build": "2020.2.0 (20202.20.0415.1946)",
+  "worksheets": 130,
+  "dashboards": 5,
+  "hyper_extracts": 9,
+  "calculated_fields": 603,
+  "datasource_captions": [
+    "Bus Sequences",
+    "Bus Stops",
+    "Cars Mock Data",
+    "MLB Stats",
+    "NBA Stats 2018-19",
+    "Sales by State Mock Data",
+    "Stephen Curry Shot Locations",
+    "Superstore 2019.4",
+    "Superstore 2019.4 (2)"
+  ],
+  "checks": "No unsafe member paths, executable assets, selected credential patterns, credential attributes, or detected analytics/dashboard extensions",
+  "limits": "Structural checks only. No Tableau rendering, complete data-content review, or security certification.",
+  "author": "Andy Kriebel",
+  "retrieved": "2026-09-15",
+  "permission_url": "https://www.vizwiz.com/2019/12/the-great-workbook-of-calcs.html",
+  "download_url": "https://public.tableau.com/workbooks/TheGreatBookofTableCalcs-LODCalcs-Actions.twb?showVizHome=no",
+  "license": "Author-specific reuse permission with attribution; not MIT; bundled third-party rights remain applicable",
+  "modified": false
+}
