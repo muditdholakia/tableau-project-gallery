@@ -1,2 +1,2 @@
-tableauserverclient==0.41
+tableauserverclient==0.42
 defusedxml==0.7.1
